@@ -7,18 +7,21 @@ import { constructMetadata } from '@/utils'
 import { cn } from '@/utils/cn'
 
 import './globals.scss'
+import MuiProvider from '@/providers/mui-provider'
 
-const fontText = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-text',
-})
+// const fontText = Inter({
+//   subsets: ['latin'],
+//   weight: ['400', '500', '600', '700', '800'],
+//   variable: '--font-text',
+// })
 
-const fontHeading = Audiowide({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-heading',
-})
+// const fontHeading = Audiowide({
+//   subsets: ['latin'],
+//   weight: ['400'],
+//   variable: '--font-heading',
+// })
+
+
 
 export const metadata = constructMetadata()
 
@@ -32,15 +35,17 @@ export default async function RootLayout({
     <html lang="en" className="dark">
       <body
         className={cn(
-          fontText.variable,
-          fontHeading.variable,
+          // fontText.variable,
+          // fontHeading.variable,
           'flex min-h-screen flex-col antialiased',
         )}
       >
         <DictionaryProvider dictionary={dictionary}>
-          <MainProviders>
-          <main className="flex flex-1 flex-col">{children}</main>
-          </MainProviders>
+          <MuiProvider>
+            <MainProviders>
+              <main className="flex flex-1 flex-col">{children}</main>
+            </MainProviders>
+          </MuiProvider>
         </DictionaryProvider>
       </body>
     </html>
