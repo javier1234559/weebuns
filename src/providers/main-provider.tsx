@@ -15,7 +15,7 @@ interface Props {
 
 async function MainProviders({ children }: Props) {
   return (
-      <>
+    <>
       <Header />
       {children}
       <Footer />
@@ -25,7 +25,7 @@ async function MainProviders({ children }: Props) {
         options={{ showSpinner: false }}
         shallowRouting
       />
-      </>
+    </>
     // <AuthProvider>
     // </AuthProvider>
   )

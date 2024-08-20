@@ -21,8 +21,6 @@ import MuiProvider from '@/providers/mui-provider'
 //   variable: '--font-heading',
 // })
 
-
-
 export const metadata = constructMetadata()
 
 export default async function RootLayout({

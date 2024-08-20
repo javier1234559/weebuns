@@ -22,8 +22,8 @@ function FooterLanguageSelect() {
 
   return (
     <Select onValueChange={handleChangeLanguage}>
-      <SelectTrigger className="!h-auto !border-none !bg-black-footer p-0">
-      <AppIcon
+      <SelectTrigger className="!bg-black-footer !h-auto !border-none p-0">
+        <AppIcon
           src="/svg/earth.svg#id"
           width="21"
           height="22"

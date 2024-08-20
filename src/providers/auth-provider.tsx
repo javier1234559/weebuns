@@ -9,7 +9,6 @@ import { emitter } from '@/utils/emitter'
 import { isSSR } from '@/utils'
 import { cleanAuth } from '@/utils/auth'
 
-
 interface AuthContextValues {
   isLogin: boolean
   login: (email: string, password: string) => Promise<any>

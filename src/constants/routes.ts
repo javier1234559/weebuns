@@ -1,5 +1,6 @@
 const RouteNames = {
-  Home: '/',
+  Landing: '/',
+  App: '/app',
   SignIn: '/sign-in',
   SignUp: '/sign-up',
 }
